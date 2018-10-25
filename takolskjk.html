@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		</head>
+		<body>
+			<form oninput="wynik.value = parseInt (a.value) * (b.value) * (1+ parseFloat(c.value))">
+			<table height="250px"  border="1" width="400" align="center" bgcolor="#FFFF99">
+			<tr>
+				<td>
+				INVOICE
+				</td>
+			</tr>
+			<tr>
+				<td align="right">Liczba godzin:</td>
+				<td width="50%">
+				<input name="a" type="number" value="40" step="5" min="0"/>
+				</td>
+			</tr>
+				<td align="right">Rate:</td>
+				<td>
+				<input name="b" type="number" value="50" step="5" min="0"/>($)
+				</td>
+			<tr>
+				<td align="right">VAT:</td>
+				<td width="50%">
+				<input name="c" type="number" value="0.2" step="0.1" min="0" max="1"/>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">TOTAL:</td>
+				<td width="50%">
+				<input name="wynik" type="output"></output>
+				</td>
+			</tr>
+			</table>
+			</form>
+	</html>
