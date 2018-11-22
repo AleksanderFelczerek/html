@@ -1,0 +1,48 @@
+			.calculator {
+				display: grid;
+				grid-template-columns: 100px 100px 100px 100px;
+				grid-template-rows: 20px 100px 100px 100px 100px;
+				font-size: 50px;
+				text-align: center;
+			}
+			
+			.button { 
+				box-sizing: border-box:
+				text-align: center;
+				outline: 2px solid black;
+				line-height: 100px;
+				background-color: lightgrey;
+			}
+			
+			.orange { 
+				background-color: orange;
+				color: white;
+			}
+			
+			.large {
+			grid-column-start: 1;
+			grid-column-end: 3;
+			}
+			
+			.wynik {
+			outline: 2px solid black;
+			display: grid;
+			background-color: black;
+			color: white;
+			grid-column-start: 1;
+			grid-column-end: 5;
+			line-height: 100px;
+			text-align: right;
+			}
+			
+			.wynik2 {
+			outline: 2px solid black;
+			display: grid;
+			background-color: black;
+			color: white;
+			font-size:10px;
+			grid-column-start: 1;
+			grid-column-end: 5;
+			text-align: right;
+			line-height: 20px;
+			}
