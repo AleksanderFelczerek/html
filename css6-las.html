@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<style>
+			  .star-six {
+				  width: 0;
+				  height: 0;
+				  border-left: 50px solid transparent;
+				  border-right: 50px solid transparent;
+				  border-bottom: 100px solid gold;
+				  position: relative;
+				  z-index: 5;
+				}
+				
+				.star-six:after {
+				  width: 0;
+				  height: 0;
+				  border-left: 50px solid transparent;
+				  border-right: 50px solid transparent;
+				  border-top: 100px solid gold;
+				  position: absolute;
+				  content: "";
+				  top: 30px;
+				  left: -50px;
+				}
+				.star-six {
+				transform: scale(0.5);
+				position: relative;
+				left: 22.5%;
+				top: -20%;}
+				
+			.container {
+				position: relative;
+				left: 15%;
+				top: 35%;
+				display: flex;
+			}
+			
+			.triangle.s {
+				border: 60px solid transparent;
+				border-bottom-color: green;
+				width:0;
+				height:0;
+			}
+			.triangle.l {
+				border: 80px solid transparent;
+				border-bottom-color: green;
+				width:0;
+				height:0;
+			}
+			.triangle.xl {
+				border: 100px solid transparent;
+				border-bottom-color: green;
+				width:0;
+				height:0;
+			}
+			.trunk {
+				width:60px;
+				height:50px;
+				background-color: brown;
+				position:absolute;
+				bottom:0;
+				left:50%;
+				transform: translateX(-50%);
+			}
+			
+			.tree {
+				position:relative;
+				width:200px;
+				height:190px;
+			}
+			
+			.triangle.s {
+				position:absolute;
+				top:0;
+				left:18%;
+				transform: translateY(-50%);
+			}
+			.triangle.l {
+				position:absolute;
+				top:20px;
+				transform: translateX(10%) translateY(-50%);
+			}
+			.triangle.xl {
+				position:absolute;
+				top:40px;
+				left:-60px;
+				transform: translateX(30%) translateY(-50%);
+			}
+
+		</style>
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="tree">
+				<div class="star-six"></div>
+				<div class="triangle s"></div>
+				<div class="triangle l"></div>
+				<div class="triangle xl"></div>
+				<div class="trunk"></div>
+			</div>
+			<div class="tree">
+				<div class="star-six"></div>
+				<div class="triangle s"></div>
+				<div class="triangle l"></div>
+				<div class="triangle xl"></div>
+				<div class="trunk"></div>
+			</div>
+			<div class="tree">
+				<div class="star-six"></div>
+				<div class="triangle s"></div>
+				<div class="triangle l"></div>
+				<div class="triangle xl"></div>
+				<div class="trunk"></div>
+			</div>
+			<div class="tree">
+				<div class="star-six"></div>
+				<div class="triangle s"></div>
+				<div class="triangle l"></div>
+				<div class="triangle xl"></div>
+				<div class="trunk"></div>
+			</div>
+		</div>
+	</body>
+</html>
