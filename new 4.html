@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		
+	@keyframes zmiania_koloru{
+		0% , 100%{
+			background-color: darkgreen;
+		}
+		50%{
+			background-color: lightgreen;
+		}
+		}
+	
+	.container {
+	  position: relative;
+	  left: 50%;
+	  top: 50px;
+	 
+	}
+	  
+    .kolo {
+	  border: 2px solid black;
+      width: 150px;
+      height: 75px;
+      background: grey;
+      border-radius: 50%;
+	  position:relative;
+	  top:39px;
+	  z-index: 2;
+    }
+	
+	.prostokat {
+	  border: 2px solid black;
+      width: 150px;
+      height: 200px;
+      background: green;
+	  z-index: 1;
+	  border-bottom: transparent;
+	  animation-name: zmiania_koloru;
+	  animation-duration: 5s;
+	  animation-iteration-count: infinite;
+    }
+	
+	.kolo2 {
+	  border: 2px solid black;
+      width: 150px;
+      height: 75px;
+      background: green;
+      border-radius: 50%;
+	  position:relative;
+	  top: -40px;
+	  z-index: 0;
+	  animation-name: zmiania_koloru;
+	  animation-duration: 5s;
+	  animation-iteration-count: infinite;
+	}
+	.prostokat2 {
+	  border: 2px solid black;
+      width: 150px;
+      height: 200px;
+      background: red;
+	  position:relative;
+	  top: -80px;
+	  z-index: -1;
+	  border-bottom: transparent;
+    }
+	
+	.kolo3 {
+	  border: 2px solid black;
+      width: 150px;
+      height: 75px;
+      background: red;
+	  border-radius: 50%;
+	  position:relative;
+	  top: -120px;
+	  z-index: -2;
+	 }
+	.prostokat3 {
+	  border: 2px solid black;
+      width: 45px;
+      height: 200px;
+      background: grey;
+	  position: relative;
+	  top: -160px;
+	  left: 50px;
+	  z-index: -3;
+	  border-bottom: transparent;
+	}
+	
+	.kolo4 {
+	  border: 2px solid black;
+      width: 45px;
+      height: 22.5px;
+      background: grey;
+      border-radius: 50%;
+	  position:relative;
+	  top: -175px;
+	  left: 50px;
+	  z-index: -4;
+	}
+	div{
+		position:relative
+	}
+	
+		</style>
+	</head>
+	 <body bgcolor="white">
+		<div class="container">
+			<div class="kolo"></div>
+			<div class="prostokat"></div>
+			<div class="kolo2"></div>
+			<div class="prostokat2"></div>
+			<div class="kolo3"></div>
+			<div class="prostokat3"></div>
+			<div class="kolo4"></div>
+		</div>
+	</body>
