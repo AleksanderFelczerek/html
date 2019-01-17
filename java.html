@@ -1,0 +1,39 @@
+console.log("hello-plik zewnętrzny")
+let imie = "Maciek z klanu";
+let wiek = "18 lat";
+let zawod = ["Budowlaniec", "Profeszynal plejer"]
+let czy_lubi_informatyke = true;
+console.log("Imie = " ,imie,
+			"wiek =" ,wiek,
+			"zawod = ",zawod,
+			"czy_lubi_informatyke", czy_lubi_informatyke);
+			
+imie="Jurek"
+wiek="19 lat"
+zawod="Kierownik budowy"
+czy_lubi_informatyke="false"
+console.log("Imie = " ,imie,
+			"wiek =" ,wiek,
+			"zawod = ",zawod,
+			"czy_lubi_informatyke", czy_lubi_informatyke);
+let butelka={
+	objetosc :1.25,
+	zawartosc :["woda","E250","konserwanty"],
+	wymiary: [100,200],
+	napijsie: function() { console.log("PIJE");
+	}
+	};
+
+console.log(butelka);
+console.log(butelka.objetosc);
+butelka.napijsie();
+
+butelka.objetosc=2;
+console.log(butelka);
+
+window.alert("Uwaga EZN")
+let odpowiedz = window.confirm("Na pewno chcesz tu wejść ?");
+console.log(odpowiedz)
+
+ imie=window.prompt("Wprowadz swoje imie");
+console.log(imie);
